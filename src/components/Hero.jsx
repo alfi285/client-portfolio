@@ -8,7 +8,7 @@ const Hero = () => {
       <a href="#projects" className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700">View Projects</a>
     
     <a
-  href="/resume.pdf"
+  href="/resume_alfiya_a _calicut.pdf"
   target="_blank"
   rel="noopener noreferrer"
   download
