@@ -1,10 +1,10 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Job Portal",
-      desc: "Register, post jobs, and apply. Role-based dashboards and secure auth.",
+      title: "Moon Light - Social Media",
+      desc: "A full-featured MERN stack social media app with user authentication, posts, likes, comments, and profile management.",
       tech: "MERN Stack",
-      image: "/project1.jpg", // Place this in /public
+      image: "/moonlight.png", // Place this in /public
     },
     {
       title: "E-Commerce App",
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "CRUD App",
       desc: "Create, read, update, and delete with live MongoDB data.",
       tech: "MERN Stack",
-      image: "/project3.jpg",
+      image: "/crud.png",
     },
     {
       title: "Seminar Doc System",
@@ -34,18 +34,19 @@ const Projects = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto ">
         {projects.map((proj, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
-          >
+<div
+  key={idx}
+  className="bg-blue-70 rounded-xl shadow-lg shadow-gray-600 overflow-hidden transform transition duration-300 hover:scale-105"
+>
+
             <img
               src={proj.image}
               alt={proj.title}
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
-              <p className="text-gray-700 text-sm mb-2">{proj.desc}</p>
+              <h3 className="text-xl text-violet-400 font-semibold mb-2 ">{proj.title}</h3>
+              <p className="text-gray-400 text-sm mb-2">{proj.desc}</p>
               <p className="text-sm text-gray-500">Tech Stack: {proj.tech}</p>
             </div>
           </div>
