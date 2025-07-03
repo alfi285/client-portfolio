@@ -7,10 +7,10 @@ const Projects = () => {
       image: "/moonlight.png", // Place this in /public
     },
     {
-      title: "E-Commerce App",
-      desc: "Online shopping site using React, Node, MongoDB.",
-      tech: "MERN Stack",
-      image: "/project2.jpg",
+      title: "News.com",
+      desc: "News App is a responsive web application that fetches and displays the latest news articles using a third-party News API",
+      tech: "React",
+      image: "/newsapp.png",
     },
     {
       title: "CRUD App",
@@ -19,10 +19,10 @@ const Projects = () => {
       image: "/crud.png",
     },
     {
-      title: "Seminar Doc System",
-      desc: "Upload, store, and retrieve seminar documents.",
-      tech: "PHP, MySQL",
-      image: "/project4.jpg",
+      title: "Todo App",
+      desc: "To-Do App is a task management application that allows users to add , delete and mark tasks as completed.",
+      tech: "React",
+      image: "/todoapp.png",
     },
   ];
 
