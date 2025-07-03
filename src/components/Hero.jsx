@@ -6,10 +6,14 @@ const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen h-14 bg-black font-sans">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-blue-100">
-        <div className="text-2xl font-bold text-blue-800">Alfiya A</div>
+     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 shadow-md bg-blue-100 backdrop-blur-md">
+
+       <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+  Alfiya A
+</div>
+
 
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-6 text-blue-700 font-medium sticky-top">
@@ -17,7 +21,7 @@ const Hero = () => {
           <li><a href="#services" className="hover:text-blue-900">Services</a></li>
           <li><a href="#projects" className="hover:text-blue-900">Projects</a></li>
           <li><a href="#contact" className="hover:text-blue-900">Contact Me</a></li>
-          <li><a href="#about" className="hover:text-blue-900">About Us</a></li>
+          <li><a href="#about" className="hover:text-blue-900">About</a></li>
         </ul>
 
         {/* Mobile Toggle */}
@@ -35,27 +39,31 @@ const Hero = () => {
           <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
           <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact Me</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>About Us</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
         </ul>
       )}
 
       {/* Hero Section */}
-      <section
-        id="home"
-        className="flex flex-col items-center justify-center text-center px-6 py-12"
-      >
+     <section
+  id="home"
+  className="pt-32 flex flex-col items-center justify-center text-center px-6 py-12"
+>
+
         {/* Profile Image */}
-        <img
-          src="/alfiya_a.png"
-          alt="Alfiya A"
-          className="w-72 h-72 object-cover rounded-full border-4 border-blue-600 shadow-lg mb-6"
-        />
+        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-[2px] rounded-full inline-block hover:scale-110 hover:-translate-y-1 transition duration-300 ease-in-out drop-shadow-xl">
+  <img
+    src="/alfiya_a.png"
+    alt="Alfiya A"
+    className="w-62 h-62 object-cover rounded-full bg-white"
+  />
+</div>
+
 
         {/* Intro Text */}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
           Hi, I'm Alfiya A
         </h1>
-        <p className="text-xl text-gray-700 mb-6">
+        <p className="text-xl text-gray-500 mb-6">
           Full Stack Developer | MERN & Django
         </p>
 
@@ -65,7 +73,7 @@ const Hero = () => {
             href="https://github.com/alfi285"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black-700 hover:text-blue-900 text-2xl"
+            className="text-white hover:text-blue-900 text-2xl"
           >
             <FaGithub />
           </a>
@@ -102,7 +110,8 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
           download
-          className="mt-6 inline-block px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+          className="mt-6 inline-block px-6 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl hover:bg-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out
+"
         >
           Download Resume
         </a>
