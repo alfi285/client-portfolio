@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,12 +64,12 @@ const Hero = () => {
             href="https://github.com/alfi285"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 hover:text-blue-900 text-3xl"
+            className="text-black-700 hover:text-blue-900 text-3xl"
           >
             <FaGithub />
           </a>
           <a
-            href="www.linkedin.com/in/alfiya-a-bbbb7697"
+            href="https://www.linkedin.com/in/alfiya-a-bbbb7697/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 hover:text-blue-900 text-3xl"
@@ -83,6 +83,15 @@ const Hero = () => {
             className="text-blue-700 hover:text-blue-900 text-3xl"
           >
             <FaWhatsapp />
+          </a>
+
+           <a
+            href="mailto:alfiyazon@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-700 hover:text-blue-900 text-3xl"
+          >
+            <FaMailBulk />
           </a>
         </div>
 
