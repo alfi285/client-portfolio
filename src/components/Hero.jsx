@@ -45,7 +45,7 @@ const Hero = () => {
       >
         {/* Profile Image */}
         <img
-          src="/alfiya_profile.jpg"
+          src="/alfiya_a.png"
           alt="Alfiya A"
           className="w-72 h-72 object-cover rounded-full border-4 border-blue-600 shadow-lg mb-6"
         />
