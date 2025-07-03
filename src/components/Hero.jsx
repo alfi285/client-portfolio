@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Hero = () => {
         <div className="text-2xl font-bold text-blue-800">Alfiya A</div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex gap-6 text-blue-700 font-medium">
+        <ul className="hidden md:flex gap-6 text-blue-700 font-medium sticky-top">
           <li><a href="#home" className="hover:text-blue-900">Home</a></li>
           <li><a href="#services" className="hover:text-blue-900">Services</a></li>
           <li><a href="#projects" className="hover:text-blue-900">Projects</a></li>
@@ -64,7 +65,7 @@ const Hero = () => {
             href="https://github.com/alfi285"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black-700 hover:text-blue-900 text-3xl"
+            className="text-black-700 hover:text-blue-900 text-2xl"
           >
             <FaGithub />
           </a>
@@ -72,7 +73,7 @@ const Hero = () => {
             href="https://www.linkedin.com/in/alfiya-a-bbbb7697/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 hover:text-blue-900 text-3xl"
+            className="text-blue-700 hover:text-blue-900 text-2xl"
           >
             <FaLinkedin />
           </a>
@@ -80,7 +81,7 @@ const Hero = () => {
             href="https://wa.me/918129788436"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 hover:text-blue-900 text-3xl"
+            className="text-green-700 hover:text-blue-900 text-2xl"
           >
             <FaWhatsapp />
           </a>
@@ -89,9 +90,9 @@ const Hero = () => {
             href="mailto:alfiyazon@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-700 hover:text-blue-900 text-3xl"
+            className="text-red-700 hover:text-blue-900 text-2xl"
           >
-            <FaMailBulk />
+            <IoIosMail />
           </a>
         </div>
 
