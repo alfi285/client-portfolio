@@ -1,5 +1,12 @@
 const Projects = () => {
   const projects = [
+    
+    {
+      title:"Hospital Management System (Django)",
+      desc: "A web application for managing hospital patient records, built with Django.",
+      tech: "Django",
+      image: "/hospital.png", // Place this in /public
+    },
     {
       title: "Moon Light - Social Media (MERN Stack)",
       desc: "A full-featured MERN stack social media app with user authentication, posts, likes, comments, and profile management.",
