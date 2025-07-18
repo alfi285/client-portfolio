@@ -1,29 +1,36 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Moon Light - Social Media",
+      title: "Moon Light - Social Media (MERN Stack)",
       desc: "A full-featured MERN stack social media app with user authentication, posts, likes, comments, and profile management.",
       tech: "MERN Stack",
       image: "/moonlight.png", // Place this in /public
     },
     {
-      title: "News.com",
+      title: "News.com (React)",
       desc: "News App is a responsive web application that fetches and displays the latest news articles using a third-party News API",
       tech: "React",
       image: "/newsapp.png",
     },
     {
-      title: "CRUD App",
+      title: "CRUD App (MERN Stack)",
       desc: "Create, read, update, and delete with live MongoDB data.",
       tech: "MERN Stack",
       image: "/crud.png",
     },
     {
-      title: "Todo App",
+      title: "Todo App (React)",
       desc: "To-Do App is a task management application that allows users to add , delete and mark tasks as completed.",
       tech: "React",
       image: "/todoapp.png",
     },
+
+    {
+      title:"Employee Management System (Django)",
+      desc: "A web application for managing employee records, built with Django.",
+      tech: "Django",
+      image: "/employee_management.png",
+    }
   ];
 
   return (
