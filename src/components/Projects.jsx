@@ -5,13 +5,19 @@ const Projects = () => {
       title:"Hospital Management System (Django)",
       desc: "A web application for managing hospital patient records, built with Django.",
       tech: "Django",
-      image: "/hospital.png", // Place this in /public
+      image: "/hospital.png", 
     },
     {
       title: "Moon Light - Social Media (MERN Stack)",
       desc: "A full-featured MERN stack social media app with user authentication, posts, likes, comments, and profile management.",
       tech: "MERN Stack",
-      image: "/moonlight.png", // Place this in /public
+      image: "/moonlight.png", 
+    },
+    {
+      title: "Payment Gateway Integration (Razorpay)-(MERN Stack)",
+      desc: "A MERN stack application that integrates Razorpay for secure payment processing.",
+      tech: "MERN Stack",
+      video: "/razorpay.mp4", 
     },
     {
       title: "News.com (React)",
@@ -53,11 +59,20 @@ const Projects = () => {
   className="bg-blue-70 rounded-xl shadow-lg shadow-gray-600 overflow-hidden transform transition duration-300 hover:scale-105"
 >
 
-            <img
-              src={proj.image}
-              alt={proj.title}
-              className="w-full h-48 object-cover"
-            />
+            {proj.video ? (
+      <video
+        src={proj.video}
+        controls
+        className="w-full h-48 object-cover"
+      />
+    ) : (
+      <img
+        src={proj.image}
+        alt={proj.title}
+        className="w-full h-48 object-cover"
+      />
+    )}
+
             <div className="p-4">
               <h3 className="text-xl text-violet-400 font-semibold mb-2 ">{proj.title}</h3>
               <p className="text-gray-400 text-sm mb-2">{proj.desc}</p>
