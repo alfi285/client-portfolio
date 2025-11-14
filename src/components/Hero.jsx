@@ -64,7 +64,7 @@ const Hero = () => {
           Hi, I'm Alfiya A
         </h1>
         <p className="text-xl text-gray-500 mb-6">
-          Full Stack Developer | MERN & Django
+          Full Stack Developer | MERN | Django |FAST API |Python
         </p>
 
         {/* Social Links */}
