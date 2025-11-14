@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Profile Image */}
         <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-[2px] rounded-full inline-block hover:scale-110 hover:-translate-y-1 transition duration-300 ease-in-out drop-shadow-xl">
   <img
-    src="/alfiya_a.png"
+    src="/alf.jpg"
     alt="Alfiya A"
     className="w-62 h-62 object-cover rounded-full bg-white"
   />
