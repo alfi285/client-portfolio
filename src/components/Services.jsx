@@ -61,8 +61,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-black overflow-hidden">
-      {/* Section Heading */}
+   <section id="services" className="py-20 px-4 bg-black overflow-hidden">
+ {/* Section Heading */}
       <h2 className="text-3xl font-bold text-center bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
         My Services
       </h2>
