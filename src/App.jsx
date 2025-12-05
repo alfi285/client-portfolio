@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Services';
-import FloatingSkills from './components/Iconsection';
+import FloatingSkills, { Iconsection } from './components/Iconsection';
 
 
 
@@ -14,7 +14,7 @@ const App = () => {
     <div className="font-sans bg-white text-gray-800">
       <Hero />
       <About />
-    <FloatingSkills/>  
+      <Iconsection/>
       <Projects />
       <Services/>
       <Contact />
