@@ -12,97 +12,144 @@ const Services = () => {
   const services = [
     {
       title: "Full-Stack Web Development",
-      desc: "Build dynamic, scalable full-stack applications for real-world use.",
+      desc: "Build dynamic full-stack web apps tailored to real-world needs.",
       tech: "MERN Stack",
-      icon: <FaCode className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaCode className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "RESTful APIs & Backend",
-      desc: "Create secure and efficient API architectures using Node.js & Express.",
+      desc: "Create secure RESTful APIs with Node.js and Express.",
       tech: "Node.js, Express",
-      icon: <FaServer className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaServer className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "Python & FastAPI Backend",
-      desc: "High-performance backend systems and REST APIs using Python and FastAPI.",
+      desc: "High-performance APIs using Python & FastAPI.",
       tech: "Python, FastAPI",
-      icon: <FaPython className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaPython className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "MySQL Database Design",
-      desc: "Database modeling, optimization & integrations using MySQL.",
+      desc: "Schema design, query optimization and secure integrations.",
       tech: "MySQL",
-      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaDatabase className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "MongoDB Integration",
-      desc: "Document modeling, indexing & scalable MongoDB database solutions.",
+      desc: "Scalable NoSQL schemas with indexing & optimization.",
       tech: "MongoDB, Mongoose",
-      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaDatabase className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "Responsive UI",
-      desc: "Pixel-perfect, responsive UIs built with React & Tailwind CSS.",
+      desc: "Clean, responsive UI with React + Tailwind.",
       tech: "React, Tailwind CSS",
-      icon: <FaMobileAlt className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaMobileAlt className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "Authentication & Security",
-      desc: "JWT auth, encrypted passwords, route protection & secure flows.",
+      desc: "JWT, bcrypt, route protection and secure sessions.",
       tech: "JWT, Bcrypt",
-      icon: <FaLock className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaLock className="text-4xl text-emerald-400 mb-4" />,
     },
     {
       title: "Deployment & Hosting",
-      desc: "Deploy web apps on Vercel, Render, or Netlify with CI/CD workflows.",
+      desc: "Deploy full-stack apps with CI/CD workflows.",
       tech: "Vercel, Render",
-      icon: <FaCloudUploadAlt className="text-4xl text-cyan-400 mb-4" />,
+      icon: <FaCloudUploadAlt className="text-4xl text-emerald-400 mb-4" />,
     },
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-black overflow-hidden">
-      {/* Section Heading */}
-     <h2 className="text-3xl font-bold text-center bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
-
+    <section id="services" className="py-20 px-10 bg-black overflow-hidden">
+      {/* Heading */}
+      <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent mb-12 animate-fade-slide">
         My Services
       </h2>
 
-      {/* Cards Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      {/* Grid */}
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {services.map((service, idx) => (
           <div
             key={idx}
             className="
               group 
-              bg-gradient-to-br from-gray-900 via-gray-800 to-black 
-              rounded-3xl p-[1px] 
+              bg-gradient-to-br from-slate-900/60 to-gray-800/40 
+              backdrop-blur-lg 
+              rounded-2xl 
+              p-[1px] 
               shadow-lg 
-              hover:shadow-cyan-400/40 
               transition 
               transform 
-              hover:scale-110 
-              hover:-translate-y-3 
-              hover:rotate-1 
-              duration-500 
-              animate-card-float
+              hover:scale-105 
+              hover:-translate-y-2 
+              hover:shadow-emerald-500/20 
+              duration-300 
+              animate-card-fade
             "
             style={{ animationDelay: `${idx * 0.12}s` }}
           >
-            <div className="bg-black/60 backdrop-blur-xl rounded-3xl h-full p-6 flex flex-col items-center text-center">
-              <div className="group-hover:animate-bounce-once">{service.icon}</div>
+            <div
+              className="
+                bg-black/60 
+                rounded-2xl 
+                p-5 
+                h-full 
+                flex 
+                flex-col 
+                items-center 
+                text-center 
+                gap-2 
+                transition-all 
+                duration-300
+                group-hover:bg-black/80
+                group-hover:rotate-[1deg]
+              "
+            >
+              {/* Icon Animation */}
+              <div className="group-hover:animate-wiggle">{service.icon}</div>
 
-              <h3 className="text-xl text-cyan-300 font-semibold mt-2 mb-2">
+              <h3 className="text-lg text-emerald-300 font-semibold mt-2">
                 {service.title}
               </h3>
 
-              <p className="text-gray-400 text-sm mb-2">{service.desc}</p>
+              <p className="text-gray-400 text-sm">{service.desc}</p>
 
-              <p className="text-sm text-gray-500">Tech: {service.tech}</p>
+              <p className="text-xs text-gray-500">Tech: {service.tech}</p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Animations */}
+      <style>{`
+        @keyframes fade-slide {
+          from { opacity: 0; transform: translateY(20px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-slide {
+          animation: fade-slide 0.7s ease forwards;
+        }
+
+        @keyframes card-fade {
+          from { opacity: 0; transform: translateY(25px) scale(0.95); }
+          to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .animate-card-fade {
+          animation: card-fade 0.6s ease forwards;
+        }
+
+        @keyframes wiggle {
+          0%,100% { transform: rotate(0deg); }
+          50%     { transform: rotate(6deg); }
+        }
+
+        .animate-wiggle {
+          animation: wiggle 0.4s ease-in-out;
+        }
+      `}</style>
     </section>
   );
 };
