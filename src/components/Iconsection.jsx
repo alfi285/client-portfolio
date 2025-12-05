@@ -20,7 +20,7 @@ import {
   SiFastapi,
 } from "react-icons/si";
 
-export const Iconsection = () => {
+const Iconsection = () => {
   const icons = [
     { icon: <FaReact />, color: "#61DBFB" },
     { icon: <FaNodeJs />, color: "#539E43" },
@@ -81,3 +81,5 @@ export const Iconsection = () => {
     </section>
   );
 };
+
+export default Iconsection;
