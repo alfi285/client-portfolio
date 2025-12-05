@@ -63,34 +63,36 @@ const Services = () => {
   return (
     <section id="services" className="py-20 px-6 bg-black overflow-hidden">
       {/* Section Heading */}
-     <h2 className="text-3xl font-bold text-center bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
-
+      <h2 className="text-3xl font-bold text-center bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
         My Services
       </h2>
 
       {/* Cards Grid */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
         {services.map((service, idx) => (
           <div
             key={idx}
             className="
               group 
               bg-gradient-to-br from-gray-900 via-gray-800 to-black 
-              rounded-3xl p-[1px] 
+              rounded-3xl 
+              p-[1px] 
               shadow-lg 
               hover:shadow-cyan-400/40 
               transition 
               transform 
-              hover:scale-110 
-              hover:-translate-y-3 
-              hover:rotate-1 
+              hover:scale-105 
+              hover:-translate-y-2 
+              hover:rotate-[0.5deg]
               duration-500 
               animate-card-float
             "
             style={{ animationDelay: `${idx * 0.12}s` }}
           >
-            <div className="bg-black/60 backdrop-blur-xl rounded-3xl h-full p-6 flex flex-col items-center text-center">
-              <div className="group-hover:animate-bounce-once">{service.icon}</div>
+            <div className="bg-black/60 backdrop-blur-xl rounded-3xl h-full p-4 flex flex-col items-center text-center">
+              <div className="group-hover:animate-bounce-once">
+                {service.icon}
+              </div>
 
               <h3 className="text-xl text-cyan-300 font-semibold mt-2 mb-2">
                 {service.title}
