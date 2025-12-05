@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* Fade Slide */
 @keyframes fadeSlide {
   0% {
     opacity: 0;
@@ -14,30 +15,30 @@
   animation: fadeSlide 0.8s ease-out forwards;
 }
 
-@keyframes cardFade {
+/* Float Animation for Cards */
+@keyframes cardFloat {
   0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-card-fade {
-  animation: cardFade 0.8s ease-out forwards;
-}
-
-@keyframes bounceOnce {
-  0% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   50% {
     transform: translateY(-6px);
   }
   100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-card-float {
+  animation: cardFloat 4s ease-in-out infinite;
+}
+
+/* Bounce Once on Hover */
+@keyframes bounceOnce {
+  0%, 100% {
     transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
   }
 }
 

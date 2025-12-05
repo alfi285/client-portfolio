@@ -12,76 +12,86 @@ const Services = () => {
   const services = [
     {
       title: "Full-Stack Web Development",
-      desc: "Build dynamic full-stack web apps tailored to real-world needs.",
+      desc: "Build dynamic, scalable full-stack applications for real-world use.",
       tech: "MERN Stack",
-      icon: <FaCode className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaCode className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "RESTful APIs & Backend",
-      desc: "Create secure RESTful APIs with Node.js, Express and efficient middleware handling.",
+      desc: "Create secure and efficient API architectures using Node.js & Express.",
       tech: "Node.js, Express",
-      icon: <FaServer className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaServer className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "Python & FastAPI Backend",
-      desc: "Build high-performance backend systems and APIs using Python and FastAPI.",
+      desc: "High-performance backend systems and REST APIs using Python and FastAPI.",
       tech: "Python, FastAPI",
-      icon: <FaPython className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaPython className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "MySQL Database Design",
-      desc: "Schema design, query optimization and secure integrations using Python backend.",
+      desc: "Database modeling, optimization & integrations using MySQL.",
       tech: "MySQL",
-      icon: <FaDatabase className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "MongoDB Integration",
-      desc: "Schema design, indexing, and integration with scalable MongoDB databases.",
+      desc: "Document modeling, indexing & scalable MongoDB database solutions.",
       tech: "MongoDB, Mongoose",
-      icon: <FaDatabase className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "Responsive UI",
-      desc: "Responsive, mobile-first UIs built with React, Tailwind, and accessibility.",
+      desc: "Pixel-perfect, responsive UIs built with React & Tailwind CSS.",
       tech: "React, Tailwind CSS",
-      icon: <FaMobileAlt className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaMobileAlt className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "Authentication & Security",
-      desc: "JWT, password encryption, route protection and secure session handling.",
+      desc: "JWT auth, encrypted passwords, route protection & secure flows.",
       tech: "JWT, Bcrypt",
-      icon: <FaLock className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaLock className="text-4xl text-cyan-400 mb-4" />,
     },
     {
       title: "Deployment & Hosting",
-      desc: "Deploy full-stack apps on Vercel, Render or Netlify with CI/CD pipelines.",
+      desc: "Deploy web apps on Vercel, Render, or Netlify with CI/CD workflows.",
       tech: "Vercel, Render",
-      icon: <FaCloudUploadAlt className="text-4xl text-indigo-400 mb-4" />,
+      icon: <FaCloudUploadAlt className="text-4xl text-cyan-400 mb-4" />,
     },
   ];
 
   return (
-    <section
-      id="services"
-      className="py-20 px-6 bg-black overflow-hidden"
-    >
+    <section id="services" className="py-20 px-6 bg-black overflow-hidden">
       {/* Section Heading */}
-      <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-12 animate-fade-slide">
+      <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-cyan-400 via-emerald-400 to-purple-500 bg-clip-text text-transparent mb-12 animate-fade-slide">
         My Services
       </h2>
 
       {/* Cards Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="group bg-gradient-to-br from-slate-800 to-gray-900 rounded-3xl p-1 shadow-xl transition transform hover:scale-105 hover:-translate-y-1 duration-300 animate-card-fade"
-            style={{ animationDelay: `${idx * 0.15}s` }}
+            className="
+              group 
+              bg-gradient-to-br from-gray-900 via-gray-800 to-black 
+              rounded-3xl p-[1px] 
+              shadow-lg 
+              hover:shadow-cyan-400/40 
+              transition 
+              transform 
+              hover:scale-110 
+              hover:-translate-y-3 
+              hover:rotate-1 
+              duration-500 
+              animate-card-float
+            "
+            style={{ animationDelay: `${idx * 0.12}s` }}
           >
-            <div className="bg-black rounded-3xl h-full p-6 flex flex-col items-center text-center group-hover:shadow-xl transition-all duration-300 ease-in-out">
+            <div className="bg-black/60 backdrop-blur-xl rounded-3xl h-full p-6 flex flex-col items-center text-center">
               <div className="group-hover:animate-bounce-once">{service.icon}</div>
 
-              <h3 className="text-xl text-indigo-300 font-semibold mt-2 mb-2">
+              <h3 className="text-xl text-cyan-300 font-semibold mt-2 mb-2">
                 {service.title}
               </h3>
 
