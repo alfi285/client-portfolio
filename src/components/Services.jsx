@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaCode,
   FaServer,
@@ -11,96 +12,78 @@ import {
 const Services = () => {
   const services = [
     {
-      title: "Full-Stack Web Development",
-      desc: "Build dynamic, scalable full-stack applications for real-world use.",
-      tech: "MERN Stack",
-      icon: <FaCode className="text-4xl text-cyan-400 mb-4" />,
+      title: "Backend Architecture",
+      desc: "Designing scalable server-side systems using Django and FastAPI with optimized SQL/NoSQL databases.",
+      tech: "Python, Django, FastAPI",
+      icon: <FaServer />,
     },
     {
-      title: "RESTful APIs & Backend",
-      desc: "Create secure and efficient API architectures using Node.js & Express.",
-      tech: "Node.js, Express",
-      icon: <FaServer className="text-4xl text-cyan-400 mb-4" />,
+      title: "Full Stack Development",
+      desc: "Building high-performance, responsive web applications using the MERN stack and modern CSS frameworks.",
+      tech: "MERN, Tailwind, Bootstrap",
+      icon: <FaCode />,
     },
     {
-      title: "Python & FastAPI Backend",
-      desc: "High-performance backend systems and REST APIs using Python and FastAPI.",
-      tech: "Python, FastAPI",
-      icon: <FaPython className="text-4xl text-cyan-400 mb-4" />,
+      title: "Async & AI Solutions",
+      desc: "Implementing background task workers with Celery/Redis and integrating AI Assistants into production apps.",
+      tech: "Celery, Redis, OpenAI",
+      icon: <FaCloudUploadAlt />,
     },
     {
-      title: "MySQL Database Design",
-      desc: "Database modeling, optimization & integrations using MySQL.",
-      tech: "MySQL",
-      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
-    },
-    {
-      title: "MongoDB Integration",
-      desc: "Document modeling, indexing & scalable MongoDB database solutions.",
-      tech: "MongoDB, Mongoose",
-      icon: <FaDatabase className="text-4xl text-cyan-400 mb-4" />,
-    },
-    {
-      title: "Responsive UI",
-      desc: "Pixel-perfect, responsive UIs built with React & Tailwind CSS.",
-      tech: "React, Tailwind CSS",
-      icon: <FaMobileAlt className="text-4xl text-cyan-400 mb-4" />,
-    },
-    {
-      title: "Authentication & Security",
-      desc: "JWT auth, encrypted passwords, route protection & secure flows.",
-      tech: "JWT, Bcrypt",
-      icon: <FaLock className="text-4xl text-cyan-400 mb-4" />,
-    },
-    {
-      title: "Deployment & Hosting",
-      desc: "Deploy web apps on Vercel, Render, or Netlify with CI/CD workflows.",
-      tech: "Vercel, Render",
-      icon: <FaCloudUploadAlt className="text-4xl text-cyan-400 mb-4" />,
+      title: "Enterprise Systems",
+      desc: "Developing production-level ERP solutions with role-based auth and complex data management.",
+      tech: "Docker, PostgreSQL, JWT",
+      icon: <FaDatabase />,
     },
   ];
 
   return (
-   <section id="services" className="py-20 px-4 bg-black overflow-hidden">
- {/* Section Heading */}
-      <h2 className="text-3xl font-bold text-center bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
-        My Services
-      </h2>
+   <section id="services" className="py-24 px-4 overflow-hidden">
+      {/* Section Heading */}
+      <div className="max-w-4xl mx-auto text-center mb-16">
+        <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4 tracking-tighter uppercase">
+          What I Do
+        </h2>
+        <p className="text-gray-500 font-bold tracking-widest uppercase text-xs">
+          Specialized Services for Modern Web Solutions
+        </p>
+      </div>
 
       {/* Cards Grid */}
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
         {services.map((service, idx) => (
           <div
             key={idx}
             className="
               group 
-              bg-gradient-to-br from-gray-900 via-gray-800 to-black 
-              rounded-3xl 
-              p-[1px] 
-              shadow-lg 
-              hover:shadow-cyan-400/40 
-              transition 
-              transform 
-              hover:scale-105 
-              hover:-translate-y-2 
-              hover:rotate-[0.5deg]
-              duration-500 
-              animate-card-float
+              bg-white/60
+              backdrop-blur-xl
+              rounded-[32px] 
+              p-8
+              border border-black/5
+              shadow-xl
+              hover:shadow-indigo-500/10 
+              transition-all
+              duration-500
+              hover:-translate-y-2
             "
-            style={{ animationDelay: `${idx * 0.12}s` }}
           >
-            <div className="bg-black/60 backdrop-blur-xl rounded-3xl h-full p-4 flex flex-col items-center text-center">
-              <div className="group-hover:animate-bounce-once">
-                {service.icon}
-              </div>
+            <div className="text-gray-900 mb-6 transform transition-transform group-hover:scale-110 group-hover:rotate-3 duration-500">
+              {React.cloneElement(service.icon, { className: "text-5xl text-black" })}
+            </div>
 
-              <h3 className="text-xl text-cyan-300 font-semibold mt-2 mb-2">
-                {service.title}
-              </h3>
+            <h3 className="text-xl font-black text-gray-900 mb-3 tracking-tight">
+              {service.title}
+            </h3>
 
-              <p className="text-gray-400 text-sm mb-2">{service.desc}</p>
+            <p className="text-gray-500 text-sm font-medium leading-relaxed mb-4">
+              {service.desc}
+            </p>
 
-              <p className="text-sm text-gray-500">Tech: {service.tech}</p>
+            <div className="mt-auto">
+              <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest bg-indigo-50 px-2 py-1 rounded-md">
+                {service.tech}
+              </span>
             </div>
           </div>
         ))}

@@ -13,7 +13,7 @@ import Iconsection from './components/Iconsection';
 
 const App = () => {
   return (
-    <div className="font-sans bg-white text-gray-800">
+    <div className="font-sans bg-gradient-to-br from-indigo-50 via-white to-pink-50 text-gray-900 min-h-screen">
       <Hero />
       <About />
       <Iconsection/>

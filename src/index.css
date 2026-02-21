@@ -1,4 +1,13 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom right, #eef2ff, #ffffff, #fdf2f8);
+  color: #111827;
+}
 /* Fade Slide */
 @keyframes fadeSlide {
   0% {
