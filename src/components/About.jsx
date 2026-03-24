@@ -50,11 +50,11 @@ const About = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="font-black text-gray-900">MSc. in Computer Science</h4>
-                  <p className="text-sm text-gray-500 font-bold uppercase tracking-tight">Farook College • 2013 — 2015</p>
+                  <p className="text-sm text-gray-500 font-bold  tracking-tight">Farook College • 2013 — 2015</p>
                 </div>
                 <div>
-                  <h4 className="font-black text-gray-900">Full Stack Development</h4>
-                  <p className="text-sm text-gray-500 font-bold uppercase tracking-tight">Corpus Data Hub • 2024 — 2025</p>
+                  <h4 className="font-black text-gray-900">MERN/Python (Django) Full Stack Development</h4>
+                  <p className="text-sm text-gray-500 font-bold  tracking-tight">Corpus Data Hub • 2024 — 2025 - Under National Council for Technology and Training - Govt. of India</p>
                 </div>
               </div>
             </div>

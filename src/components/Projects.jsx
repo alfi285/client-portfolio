@@ -28,15 +28,36 @@ const Projects = () => {
       title: "Expense Tracker",
       desc: "Full stack tracker with JWT auth, category filtering, and real-time budget insights.",
       tech: "MERN Stack",
-      image: "/expense.png",
+      image: "/exp.png",
       readMore: "https://github.com/alfi285/MERN-Expense-Tracker",
     },
     {
       title: "Smart City Feedback",
       desc: "Portal for city service feedback implementing core MERN features and real-time usability tracking.",
       tech: "MERN Stack",
-      image: "/smartcity.png",
+      video: "/smartcity.mp4",
       readMore: "https://github.com/alfi285/Smart-City-Service",
+    },
+    {
+      title: "News App",
+      desc: "React-based news aggregator that fetches and displays live headlines by category using a public news API.",
+      tech: "React",
+      image: "/newsapp.png",
+      readMore: "https://github.com/alfi285",
+    },
+    {
+      title: "Todo App",
+      desc: "Clean and minimal task manager with add, complete, and delete functionality built with React and local state.",
+      tech: "React",
+      image: "/todoapp.png",
+      readMore: "https://github.com/alfi285",
+    },
+    {
+      title: "Razorpay Integration",
+      desc: "Seamless payment gateway integration using Razorpay with order creation, payment verification, and success flow.",
+      tech: "MERN Stack",
+      video: "/razorpay.mp4",
+      readMore: "https://github.com/alfi285",
     },
   ];
 
