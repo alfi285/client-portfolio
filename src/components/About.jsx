@@ -5,7 +5,7 @@ const About = () => {
     {
       role: "Python Backend Developer Intern",
       company: "Brandstrek Coders Private Limited, HiLite Business Park, Calicut",
-      duration: "Dec '25 — Present",
+      duration: "Dec '25 — Mar '26",
       desc: "Working on Xchools, a production level School ERP. Built scalable REST APIs using Django & DRF, implemented background tasks with Celery/Redis, and containerized applications using Docker.",
     },
     {
@@ -29,17 +29,19 @@ const About = () => {
           {/* Summary & Education */}
           <div className="space-y-12">
             <div className="border-l-4 border-black pl-8 py-2">
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight uppercase">
-                Professional <br /> Summary
-              </h2>
-              <p className="text-lg text-gray-600 font-medium leading-relaxed">
-                Experienced Python Backend Developer currently working at <span className="text-black font-black">Brandstrek Coders</span> on production level School ERP systems with AI Assistant integration.
-                Skilled in Django, FastAPI, Celery, and Docker for scalable backend architectures. 
-                <span className="block mt-4 text-gray-500 italic">
-                  Proficient in leveraging cutting edge AI driven development environments and LLMs, including <strong>Antigravity</strong>, <strong>Lovable</strong>, <strong>Cursor</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong>, alongside <strong>VS Code</strong>, to accelerate software delivery and maintain high-quality code standards.
-                </span>
-              </p>
-            </div>
+  <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight uppercase">
+    Professional <br /> Summary
+  </h2>
+  <p className="text-lg text-gray-600 font-medium leading-relaxed">
+    Full Stack Developer with expertise in Python (Django, FastAPI) and the MERN stack, experienced in building scalable, production level applications including a School ERP system (Xchools).
+
+    Skilled in REST APIs, asynchronous processing (Celery, Redis), responsive UI development, and cloud deployment using Vercel and Render.
+
+    <span className="block mt-4 text-gray-500 italic">
+      AI enthusiast focused on integrating intelligent features into real-world applications, with hands-on experience using modern AI-assisted development tools.
+    </span>
+  </p>
+</div>
 
             <div className="bg-white/60 backdrop-blur-xl border border-black/5 p-8 rounded-[40px] shadow-2xl overflow-hidden relative">
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-100 rounded-full blur-3xl -mr-16 -mt-16" />
